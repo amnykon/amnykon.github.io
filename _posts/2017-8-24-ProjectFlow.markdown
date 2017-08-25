@@ -16,14 +16,14 @@ Project Flow allows a large project to be broken up into tasks. These tasks can 
 Projects can be shared with others to allow the project to be completed as a group.
 Utilized CloudKit to store project and task information and to coordinate efforts projects with others.
 
-![test image size](/images/ProjectFlow/ProjectFlowMVP7+.png){:height="552px" width="311px" class="content__item-img-center animated zoomIn"}
+<img src="/images/ProjectFlow/ProjectFlowMVP7+.png" height="552px" width="311px" class="content__item-img-center animated zoomIn">
 Split a large project into tasks. Split those tasks to even smaller tasks.
 
-![test image size](/images/ProjectFlow/ProjectFlowEnumIcons7+.png){:height="552px" width="311px" class="content__item-img-center animated zoomIn"}
+<img src="/images/ProjectFlow/ProjectFlowEnumIcons7+.png" height="552px" width="311px" class="content__item-img-center animated zoomIn">
 Prioritize tasks to focus on what is important.<br>
 Keep track of the progress of each task.
 
-![test image size](/images/ProjectFlow/ProjectFlowProjectList7+.png){:height="552px" width="311px" class="content__item-img-center animated zoomIn"}
+<img src="/images/ProjectFlow/ProjectFlowProjectList7+.png" height="552px" width="311px" class="content__item-img-center animated zoomIn">
 Create multiple projects and cordinate efferts with others by shareing your projects.
 
 {% section_title Download %}

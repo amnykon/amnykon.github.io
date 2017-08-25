@@ -16,16 +16,16 @@ PhotoDrop makes photo sharing into an interactive game.
 Don’t waste your time sitting and scrolling through social media photos on your couch. 
 You can now get outside and hunt for amazing images hidden around town, or drop your own epic photo for someone to find. The more photos you drop, find, and like, the more points you earn!
 
-![test image size](/images/PhotoDrop/PhotoDropWayOverWander.png){:height="552px" width="311px" class="content__item-img-center animated zoomIn"}
+<img src="/images/PhotoDrop/PhotoDropWayOverWander.png" height="552px" width="311px" class="content__item-img-center animated zoomIn">
 Take pictures and drop them at the gheographical location they where taken.
 
-![test image size](/images/PhotoDrop/PhotoDropRouteToDabird.png){:height="552px" width="311px" class="content__item-img-center animated zoomIn"}
+<img src="/images/PhotoDrop/PhotoDropRouteToDabird.png" height="552px" width="311px" class="content__item-img-center animated zoomIn">
 Tap on a gem to reveal it's title and the fastest route to navigate there.
 
-![test image size](/images/PhotoDrop/PhotoDropCodeForDays.png){:height="552px" width="311px" class="content__item-img-center animated zoomIn"}
+<img src="/images/PhotoDrop/PhotoDropCodeForDays.png" height="552px" width="311px" class="content__item-img-center animated zoomIn">
 Once you reach the destination, you can view the photo.
 
-![test image size](/images/PhotoDrop/PhotoDropPoints.png){:height="552px" width="311px" class="content__item-img-center animated zoomIn"}
+<img src="/images/PhotoDrop/PhotoDropPoints.png" height="552px" width="311px" class="content__item-img-center animated zoomIn">
 Earn points by liking a photo and dropping your own photo for others to like.
 
 {% section_title Download %}
