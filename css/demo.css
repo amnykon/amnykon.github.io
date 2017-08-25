@@ -268,7 +268,7 @@ a:hover {
 	color: white;
 }
 
-.content__item-inner h2,h3{
+.content__item-inner {
 	text-align: center;
 }
 
