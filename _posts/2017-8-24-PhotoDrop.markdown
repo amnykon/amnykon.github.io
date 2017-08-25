@@ -28,6 +28,5 @@ Once you reach the destination, you can view the photo.
 <img src="/images/PhotoDrop/PhotoDropPoints.png" height="552px" width="311px" class="content__item-img-center animated zoomIn">
 Earn points by liking a photo and dropping your own photo for others to like.
 
-{% section_title Download %}
-{% download app_store | https://itunes.apple.com/app/apple-store/id1266946388?pt=320144&ct=Deep%20Website%20Bottom&mt=8 %}
-
+<h3 id="section_title">Download</h3>
+{% download app_store | https://itunes.apple.com/app/apple-store/id1261434444?pt=320144&ct=Deep%20Website%20Bottom&mt=8 %}

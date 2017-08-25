@@ -26,6 +26,6 @@ Keep track of the progress of each task.
 <img src="/images/ProjectFlow/ProjectFlowProjectList7+.png" height="552px" width="311px" class="content__item-img-center animated zoomIn">
 Create multiple projects and cordinate efferts with others by shareing your projects.
 
-{% section_title Download %}
-{% download app_store | https://itunes.apple.com/app/apple-store/id1261434444?pt=320144&ct=Deep%20Website%20Bottom&mt=8 %}
+<h3 id="section_title">Download</h3>
+<a href=" https://itunes.apple.com/app/apple-store/id1261434444?pt=320144&amp;ct=Deep%20Website%20Bottom&amp;mt=8 "><img class="content__item-img-center" src="/images/app_store.png"></a>
 
