@@ -1,28 +1,83 @@
----
-layout: default
----
-<div style="width: 100%; flex: 1; position: relative;">
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Micah Bunting</title>
+  <meta name="author" content="Micah Bunting" />
+  <meta name="description" content="" >
+  <meta name="keywords" content="mac,apple,iphone,ios,osx,games,apps,development" >
+  <link rel="alternate" type="application/rss+xml" title="Micah Bunting" href="http://www.delightfuldev.com/portfolio//feed.xml" />
+  <link rel="stylesheet" href="/portfolio//css/component.css">
+  <link rel="stylesheet" href="/portfolio//css/demo.css">
+  <link rel="canonical" href="http://www.delightfuldev.com/portfolio//">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="/portfolio//fonts/feather/style.css">
+  <link rel="stylesheet" type="text/css"  href="/portfolio//css/animate.min.css">
+  <script src="/portfolio//js/modernizr.custom.js"></script>
+  <script src="/portfolio//js/hammer.min.js"></script>
+  
+
+</head>
+
+
+  <body>
+      <div class="container">
+          <header class="bp-header cf">
+	
+		<span>Micah Bunting</span>
+		<div id="site-info"></div>
+		<h1></h1>
+		<nav>
+			<a id="hire_me_button" data-info="About me"> <center> <img src="/images/nav/AboutMe.png" alt="About me"> </center> </a>
+			<a href="mailto:amnykon@gmail.com" class="bp-icon" target="_blank" data-info="Send me e-mail"> <center> <img src="/images/nav/Mail.png" alt="linked in"> </center> </a>
+			<a href="/documents/MicahBuntingResume.pdf" data-info="See resume"> <center> <img src="/images/nav/Resume.png" alt="See resume"> </center> </a>
+			<a href="https://linkedin.com/in/micahbunting" data-info="See LinkedIn profile"> <center> <img src="/images/nav/LinkedIn.png" alt="See LinkedIn profile"> </center> </a>
+			<a href="https://github.com/" data-info="See Github profile"> <center> <img src="/images/nav/Github.png" alt="See Github profile"> </center> </a>
+		</nav>
+	
+</header>
+
+
+
+          <div style="width: 100%; flex: 1; position: relative;">
     <div style="display: flex; flex-direction: column; height: 88%; width: 100%; position: absolute; justify-content: center;">
         <section class="slider" id="main_slider">
-            {% for post in site.posts %}
-            <div class="slide" data-content="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.permalink | prepend: site.baseurl }}{% endif %}">
+            
+            <div class="slide" data-content="/portfolio/ProjectDrop">
                 <div class="slide__mover">
                     <div class="zoomer flex-center">
-                        {% assign device_image = '/images/' | append: post.device | append: '.png' | prepend: site.baseurl %}
-                        <img class="zoomer__image" src="{{ device_image }}" alt="{{ post.device }}" />
+                        
+                        <img class="zoomer__image" src="/portfolio//images/iphone.png" alt="iphone" />
                         <div class="preview">
-                            {% assign app_preview = '/images/' | append: post.name | downcase | append: '/preview.png'  %}
-                            {% if post.app_preview %}
-                                {% assign app_preview = post.app_preview %}
-                            {% endif %}
-                            <img src="{{ app_preview | prepend: site.baseurl }}" alt="{{ post.name }}" />
+                            
+                            
+                            <img src="/portfolio//images/PhotoDrop/preview.png" alt="Photo Drop" />
                             <div class="zoomer__area zoomer__area--size-5"></div>
                         </div>
                     </div>
                 </div>
-                <h2 class="slide__title">{{ post.name }}<span>{{ post.tagline }}</span></h2>
+                <h2 class="slide__title">Photo Drop<span></span></h2>
             </div>
-            {% endfor %}
+            
+            <div class="slide" data-content="/portfolio/ProjectFlow">
+                <div class="slide__mover">
+                    <div class="zoomer flex-center">
+                        
+                        <img class="zoomer__image" src="/portfolio//images/iphone.png" alt="iphone" />
+                        <div class="preview">
+                            
+                            
+                            <img src="/portfolio//images/ProjectFlow/preview.png" alt="Project Flow" />
+                            <div class="zoomer__area zoomer__area--size-5"></div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="slide__title">Project Flow<span></span></h2>
+            </div>
+            
         	<nav class="slider__nav">
         		<button class="button button--nav-prev"><i class="icon icon--arrow-left"></i><span class="text-hidden">Previous product</span></button>
         		<button class="button button--zoom"><i class="icon icon--zoom"></i><span class="text-hidden">View details</span></button>
@@ -32,3 +87,50 @@ layout: default
     </div>
 
 </div>
+
+
+
+      </div>
+
+      <section class="content">
+      </section>
+
+      
+          <section class="profile">
+
+              <div style="position: relative;z-index: 1000;" id="profile_card_parent">
+                  <div class="card hovercard" id="profile_card">
+                      <a class="bp-icon bp-icon-close" id="close_profile"><span></span></a>
+                      <div class="cardheader">
+                          <img alt="" src="/portfolio//images/profile-header.png">
+                      </div>
+                      <div class="avatar">
+                          <img alt="" src="/portfolio//images/avatar.jpg">
+                      </div>
+                      <div class="info">
+                          <div class="title">
+                              <a target="_blank" href="">Micah Bunting</a>
+                          </div>
+                          <div class="desc"><p>I am a Self Driven iOS developer. I have tought myself C back in high school.</p>
+
+<p>Though I know how to code, I didn’t really start my journey until I added several features to Pioneers, an open source emulation of the board game The Settlers of Catan.</p>
+
+<p>When I worked for Samsung as a Photolithograph technician, I wanted to do something productive when I was on standby just incase something breaks. I used this time to develop a program to automate some basic tasks that I was doing, such as pulling files from ASML tools. I shared this with the team and they game me a praise award for it.</p>
+</div>
+                      </div>
+                  </div>
+              </div>
+
+          </section>
+      
+
+
+
+
+    <script src="/portfolio//js/classie.js"></script>
+  	<script src="/portfolio//js/dynamics.min.js"></script>
+  	<script src="/portfolio//js/main.js"></script>
+  </body>
+
+
+</html>

@@ -1,30 +1,72 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>Micah Bunting</title>
+    <description></description>
+    <link>http://www.delightfuldev.com/portfolio//</link>
+    <atom:link href="http://www.delightfuldev.com/portfolio//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 25 Aug 2017 14:16:08 -0600</pubDate>
+    <lastBuildDate>Fri, 25 Aug 2017 14:16:08 -0600</lastBuildDate>
+    <generator>Jekyll v3.5.2</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>Photo Drop</title>
+        <description>&lt;p&gt;PhotoDrop makes photo sharing into an interactive game. 
+Don’t waste your time sitting and scrolling through social media photos on your couch. 
+You can now get outside and hunt for amazing images hidden around town, or drop your own epic photo for someone to find. The more photos you drop, find, and like, the more points you earn!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/PhotoDrop/PhotoDropWayOverWander.png&quot; height=&quot;552px&quot; width=&quot;311px&quot; class=&quot;content__item-img-center animated zoomIn&quot; /&gt;
+Take pictures and drop them at the gheographical location they where taken.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/PhotoDrop/PhotoDropRouteToDabird.png&quot; height=&quot;552px&quot; width=&quot;311px&quot; class=&quot;content__item-img-center animated zoomIn&quot; /&gt;
+Tap on a gem to reveal it’s title and the fastest route to navigate there.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/PhotoDrop/PhotoDropCodeForDays.png&quot; height=&quot;552px&quot; width=&quot;311px&quot; class=&quot;content__item-img-center animated zoomIn&quot; /&gt;
+Once you reach the destination, you can view the photo.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/PhotoDrop/PhotoDropPoints.png&quot; height=&quot;552px&quot; width=&quot;311px&quot; class=&quot;content__item-img-center animated zoomIn&quot; /&gt;
+Earn points by liking a photo and dropping your own photo for others to like.&lt;/p&gt;
+
+&lt;h3 id=&quot;section_title&quot;&gt;Download&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot; https://itunes.apple.com/app/apple-store/id1261434444?pt=320144&amp;amp;ct=Deep%20Website%20Bottom&amp;amp;mt=8 &quot;&gt;&lt;img class=&quot;content__item-img-center&quot; src=&quot;/portfolio//images/app_store.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 24 Aug 2017 06:32:25 -0600</pubDate>
+        <link>http://www.delightfuldev.com/portfolio//ProjectDrop</link>
+        <guid isPermaLink="true">http://www.delightfuldev.com/portfolio//ProjectDrop</guid>
+        
+        
+        <category>iphone</category>
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Project Flow</title>
+        <description>&lt;p&gt;Project Flow allows a large project to be broken up into tasks. These tasks can be further broken into smaller tasks. This can continue until the tasks are easily achievable.
+Projects can be shared with others to allow the project to be completed as a group.
+Utilized CloudKit to store project and task information and to coordinate efforts projects with others.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ProjectFlow/ProjectFlowMVP7+.png&quot; height=&quot;552px&quot; width=&quot;311px&quot; class=&quot;content__item-img-center animated zoomIn&quot; /&gt;
+Split a large project into tasks. Split those tasks to even smaller tasks.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ProjectFlow/ProjectFlowEnumIcons7+.png&quot; height=&quot;552px&quot; width=&quot;311px&quot; class=&quot;content__item-img-center animated zoomIn&quot; /&gt;
+Prioritize tasks to focus on what is important.&lt;br /&gt;
+Keep track of the progress of each task.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ProjectFlow/ProjectFlowProjectList7+.png&quot; height=&quot;552px&quot; width=&quot;311px&quot; class=&quot;content__item-img-center animated zoomIn&quot; /&gt;
+Create multiple projects and cordinate efferts with others by shareing your projects.&lt;/p&gt;
+
+&lt;h3 id=&quot;section_title&quot;&gt;Download&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot; https://itunes.apple.com/app/apple-store/id1261434444?pt=320144&amp;amp;ct=Deep%20Website%20Bottom&amp;amp;mt=8 &quot;&gt;&lt;img class=&quot;content__item-img-center&quot; src=&quot;/images/app_store.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 24 Aug 2017 06:32:24 -0600</pubDate>
+        <link>http://www.delightfuldev.com/portfolio//ProjectFlow</link>
+        <guid isPermaLink="true">http://www.delightfuldev.com/portfolio//ProjectFlow</guid>
+        
+        
+        <category>iphone</category>
+        
+      </item>
+    
   </channel>
 </rss>
