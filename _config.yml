@@ -5,7 +5,7 @@ email: amnykon@gmail.com
 #info: "Edit this info in _config.yml"
 #message: "Edit this message in _config.yml"
 keywords: "mac,apple,iphone,ios,osx,games,apps,development"
-baseurl: "/portfolio/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.delightfuldev.com" # the base hostname & protocol for your site
 linkedin_username: micahbunting
 resume_site: /documents/MicahBuntingResume.pdf
