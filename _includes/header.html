@@ -1,12 +1,15 @@
 <header class="bp-header cf">
 	{% if page.title == null %}
-		<span>{{ site.title }} <span class="bp-icon bp-icon-about" id="site-info-button"  data-content="{{ site.info }}"></span></span>
+		<span>{{ site.title }}</span>
 		<div id="site-info">{{ site.info }}</div>
 		<h1>{{ site.message }}</h1>
 		<nav>
-			<a class="bp-icon bp-icon-child" id="hire_me_button" data-info="Hire Me"><span>Hire Me</span></a>
-			<a href="{{ site.twitter_username | prepend: "https://twitter.com/" }}" class="bp-icon bp-icon-twitter" data-info="@{{ site.twitter_username }}" target="_blank"><span>@{{ site.twitter_username }}</span></a>
-			<a href="mailto:{{ site.email }}" class="bp-icon bp-icon-email" data-info="send me e-mail"><span>send me e-mail</span></a>
+			<a id="hire_me_button" data-info="About me"> <center> <img src="/images/nav/AboutMe.png" alt="About me"> </center> </a>
+			<a href="mailto:{{ site.email }}" class="bp-icon" target="_blank" data-info="Send me e-mail"> <center> <img src="/images/nav/Mail.png" alt="linked in"> </center> </a>
+			<a href="{{ site.resume_site }}" data-info="See resume"> <center> <img src="/images/nav/Resume.png" alt="See resume"> </center> </a>
+			<a href="{{ site.linkedin_username | prepend: "https://linkedin.com/in/" }}" data-info="See LinkedIn profile"> <center> <img src="/images/nav/LinkedIn.png" alt="See LinkedIn profile"> </center> </a>
+			<a href="{{ site.github_username | prepend: "https://github.com/" }}" data-info="See Github profile"> <center> <img src="/images/nav/Github.png" alt="See Github profile"> </center> </a>
 		</nav>
 	{% endif %}
 </header>
+

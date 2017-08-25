@@ -215,7 +215,7 @@
 					profileSection.style.visibility = 'visible';
 
 					classie.add(profileCardParent, 'animated');
-					classie.add(profileCardParent, 'bounceIn');
+		                        classie.add(profileCardParent, 'bounceInDown');
 					mainSlider.style.opacity = 0.1;
 				} else {
 					closeProfileCard();
