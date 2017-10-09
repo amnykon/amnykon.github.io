@@ -5,9 +5,57 @@
     <description></description>
     <link>http://www.delightfuldev.com/</link>
     <atom:link href="http://www.delightfuldev.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 05 Sep 2017 17:28:21 -0600</pubDate>
-    <lastBuildDate>Tue, 05 Sep 2017 17:28:21 -0600</lastBuildDate>
+    <pubDate>Mon, 09 Oct 2017 15:10:56 -0500</pubDate>
+    <lastBuildDate>Mon, 09 Oct 2017 15:10:56 -0500</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
+    
+      <item>
+        <title>SParcer and SParcerCalc</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/amnykon/SParser&quot;&gt;SPacer&lt;/a&gt; generates a swift parser from a .spacer file. The .spacer contains the rule that describe the format in the file to parse. The format is based on &lt;a href=&quot;https://en.wikipedia.org/wiki/Backus–Naur_form&quot;&gt;Blocus-Nor-Form&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/amnykon/SParserCalc&quot;&gt;SParcerCal&lt;/a&gt; is a command line calculator that uses SParcer and is designed to be an exsaple of how to  use SParcer.&lt;/p&gt;
+
+&lt;p&gt;A .sparser file describes the format of the file to create a parser for by using rules. A rule describes a component in the file that can be read. In the &lt;a href=&quot;https://github.com/amnykon/SParserCalc/blob/master/Source/SParserCalc/SParserCalc.sparser&quot;&gt;SPrcerCalc.sparcer&lt;/a&gt;, the some of the rules are: exp, term, factor, and number.&lt;/p&gt;
+
+&lt;p&gt;Each rule has a type and atleast one pattern. Using the exp rule from SParcerCalc:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;exp
+  type
+    Double
+  ::= term
+    return term
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The type is the Swift data type that is returned when the rule is read. In is case, the return type is double.&lt;/p&gt;
+
+&lt;p&gt;The pattern is a block that starts with “::=”. After the “::=” is a list of other rules to read for this rule. In this case it just reads the a term. The next line is the Swift code for the function that takes all of the rules read to match the pattern and returns the type of the rule.&lt;/p&gt;
+
+&lt;p&gt;There can be multiple patterns in a rule. SParcerCalc’s term has 3 patterns.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;term
+  type
+    Double
+  ::= term &quot;+&quot; factor
+    return term + factor
+  ::= term &quot;-&quot; factor
+    return term - factor
+  ::= factor
+    return factor
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Pattern 1 describes a term with a “+” and adds the components together. This pattern is recurseive as it’s first component reads it’s self.
+Pattern 2 describes a term with a “-“ and subtracts the compentents together.
+Pattern 3 simply returns the factor.&lt;/p&gt;
+
+&lt;p&gt;Once these rules are created, SParser can convert these .sparser files to .swift files. Each rule is turned into a function that will read the contents of the file.&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 04 Oct 2017 07:32:24 -0500</pubDate>
+        <link>http://www.delightfuldev.com/SParcer</link>
+        <guid isPermaLink="true">http://www.delightfuldev.com/SParcer</guid>
+        
+        
+        <category>iphone</category>
+        
+      </item>
     
       <item>
         <title>Photo Drop</title>
@@ -30,7 +78,7 @@ Earn points by liking a photo and dropping your own photo for others to like.&lt
 &lt;h3 id=&quot;section_title&quot;&gt;Download&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot; https://itunes.apple.com/app/apple-store/id1261434444?pt=320144&amp;amp;ct=Deep%20Website%20Bottom&amp;amp;mt=8 &quot;&gt;&lt;img class=&quot;content__item-img-center&quot; src=&quot;/images/app_store.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 24 Aug 2017 06:32:25 -0600</pubDate>
+        <pubDate>Thu, 24 Aug 2017 07:32:25 -0500</pubDate>
         <link>http://www.delightfuldev.com/ProjectDrop</link>
         <guid isPermaLink="true">http://www.delightfuldev.com/ProjectDrop</guid>
         
@@ -59,7 +107,7 @@ Create multiple projects and cordinate efforts with others by sharing your proje
 &lt;p&gt;&lt;a href=&quot; https://itunes.apple.com/app/apple-store/id1261434444?pt=320144&amp;amp;ct=Deep%20Website%20Bottom&amp;amp;mt=8 &quot;&gt;&lt;img class=&quot;content__item-img-center&quot; src=&quot;/images/app_store.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 24 Aug 2017 06:32:24 -0600</pubDate>
+        <pubDate>Thu, 24 Aug 2017 07:32:24 -0500</pubDate>
         <link>http://www.delightfuldev.com/ProjectFlow</link>
         <guid isPermaLink="true">http://www.delightfuldev.com/ProjectFlow</guid>
         

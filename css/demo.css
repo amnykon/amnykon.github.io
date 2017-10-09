@@ -70,6 +70,18 @@ a:hover {
 	color: #fff;
 }
 
+code {
+	text-align: left;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 30em;
+        padding: 1em;
+	border-style: solid;
+        border-color: white;
+        border-width: 1px;
+}
+
 /* Blueprint header */
 .bp-header {
 	width: 100%;
