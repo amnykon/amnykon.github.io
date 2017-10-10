@@ -1,37 +1,37 @@
 ---
 layout: post
-title:  "SParcer and SParcerCalc"
+title:  "SParser and SParserCalc"
 subtitle: ""
 date:   2017-10-4 12:32:24
 categories: iphone
-permalink: "SParcer"
+permalink: "SParser"
 device: "imac"
 app_preview: "/images/SParser/preview.png"
-name: "SParcer and SParcerCalc"
+name: "SParser and SParserCalc"
 tagline: ""
 app_icon: ""
 ---
 
-<a href="https://github.com/amnykon/SParser">SPacer</a> generates a swift parser from a .spacer file. The .spacer contains the rule that describe the format in the file to parse. The format is based on <a href="https://en.wikipedia.org/wiki/Backus–Naur_form">Blocus-Nor-Form</a>.
+<a href="https://github.com/amnykon/SParser">SParser</a> generates a swift parser from a .sparser file. The .sparser contains the rule that describes the format in the file to parse. The format is based on <a href="https://en.wikipedia.org/wiki/Backus–Naur_form">Blocus-Nor-Form</a>.
 
-<a href="https://github.com/amnykon/SParserCalc">SParcerCal</a> is a command line calculator that uses SParcer and is designed to be an exsaple of how to  use SParcer.
+<a href="https://github.com/amnykon/SParserCalc">SParserCalc</a> is a command line calculator that uses SParser and is designed to be an example of how to  use SParser.
 
-A .sparser file describes the format of the file to create a parser for by using rules. A rule describes a component in the file that can be read. In the <a href="https://github.com/amnykon/SParserCalc/blob/master/Source/SParserCalc/SParserCalc.sparser">SPrcerCalc.sparcer</a>, the some of the rules are: exp, term, factor, and number.
+Rules are used to describe the format of a .sparser file. A rule describes a component in the file that can be read. In <a href="https://github.com/amnykon/SParserCalc/blob/master/Source/SParserCalc/SParserCalc.sparser">SParserCalc.sparser</a>, some of the rules are: expression, term, factor, and number.
 
-Each rule has a type and atleast one pattern. Using the exp rule from SParcerCalc:
+Each rule has a type and at least one pattern. Using the expression rule from SParserCalc:
 
-<pre><code>exp
+<pre><code>expression
   type
     Double
   ::= term
     return term
 </code></pre>
 
-The type is the Swift data type that is returned when the rule is read. In is case, the return type is double.
+The type is the Swift data type that is returned when the rule is read. In this case, the return type is Double.
 
-The pattern is a block that starts with "::=". After the "::=" is a list of other rules to read for this rule. In this case it just reads the a term. The next line is the Swift code for the function that takes all of the rules read to match the pattern and returns the type of the rule.
+The pattern is a block that starts with "::=". After the "::=" is a list of other rules to read for this rule. In this case it just reads the term rule. The following line is Swift code that converts the data matched in the pattern to the type of the rule. The expression rule returns the term without modifing it.
 
-There can be multiple patterns in a rule. SParcerCalc's term has 3 patterns.
+There can be multiple patterns in a rule. SParserCalc's term has 3 patterns.
 <pre><code>term
   type
     Double
@@ -42,8 +42,8 @@ There can be multiple patterns in a rule. SParcerCalc's term has 3 patterns.
   ::= factor
     return factor
 </code></pre>
-Pattern 1 describes a term with a "+" and adds the components together. This pattern is recurseive as it's first component reads it's self.
-Pattern 2 describes a term with a "-" and subtracts the compentents together.
+Pattern 1 matches a term rule, a "+" string, followed by a factor rule and returns their sum. This pattern is recursive as the first rule in the pattern is itself.
+Pattern 2 is the same as pattern 1, except that it subtracts the factor from the term.
 Pattern 3 simply returns the factor.
 
 Once these rules are created, SParser can convert these .sparser files to .swift files. Each rule is turned into a function that will read the contents of the file.

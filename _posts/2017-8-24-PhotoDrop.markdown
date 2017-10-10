@@ -17,7 +17,7 @@ Don’t waste your time sitting and scrolling through social media photos on you
 You can now get outside and hunt for amazing images hidden around town, or drop your own epic photo for someone to find. The more photos you drop, find, and like, the more points you earn!
 
 <img src="/images/PhotoDrop/PhotoDropWayOverWander.png" height="552px" width="311px" class="content__item-img-center animated zoomIn">
-Take pictures and drop them at the gheographical location they where taken.
+Take pictures and drop them at the geographical location where they were taken.
 
 <img src="/images/PhotoDrop/PhotoDropRouteToDabird.png" height="552px" width="311px" class="content__item-img-center animated zoomIn">
 Tap on a gem to reveal it's title and the fastest route to navigate there.

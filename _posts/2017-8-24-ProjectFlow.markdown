@@ -12,9 +12,9 @@ tagline: ""
 app_icon: "/images/ProjectFlow/icon.png"
 ---
 
-Project Flow allows a large project to be broken up into tasks. These tasks can be further broken into smaller tasks. This can continue until the tasks are easily achievable.
+Project Flow allows a large project to be broken up into tasks. These tasks can be broken down further into smaller tasks. This can continue until the tasks are easily achievable.
 Projects can be shared with others to allow the project to be completed as a group.
-Utilized CloudKit to store project and task information and to coordinate efforts projects with others.
+Utilized CloudKit to store project and task information and to coordinate efforts with others.
 
 <img src="/images/ProjectFlow/ProjectFlowMVP7+.png" height="552px" width="311px" class="content__item-img-center animated zoomIn">
 Split a large project into tasks. Split those tasks to even smaller tasks.
