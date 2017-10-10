@@ -5,32 +5,32 @@
     <description></description>
     <link>http://www.delightfuldev.com/</link>
     <atom:link href="http://www.delightfuldev.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 09 Oct 2017 15:10:56 -0500</pubDate>
-    <lastBuildDate>Mon, 09 Oct 2017 15:10:56 -0500</lastBuildDate>
+    <pubDate>Mon, 09 Oct 2017 22:58:17 -0500</pubDate>
+    <lastBuildDate>Mon, 09 Oct 2017 22:58:17 -0500</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
-        <title>SParcer and SParcerCalc</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/amnykon/SParser&quot;&gt;SPacer&lt;/a&gt; generates a swift parser from a .spacer file. The .spacer contains the rule that describe the format in the file to parse. The format is based on &lt;a href=&quot;https://en.wikipedia.org/wiki/Backus–Naur_form&quot;&gt;Blocus-Nor-Form&lt;/a&gt;.&lt;/p&gt;
+        <title>SParser and SParserCalc</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/amnykon/SParser&quot;&gt;SParser&lt;/a&gt; generates a swift parser from a .sparser file. The .sparser contains the rule that describes the format in the file to parse. The format is based on &lt;a href=&quot;https://en.wikipedia.org/wiki/Backus–Naur_form&quot;&gt;Blocus-Nor-Form&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/amnykon/SParserCalc&quot;&gt;SParcerCal&lt;/a&gt; is a command line calculator that uses SParcer and is designed to be an exsaple of how to  use SParcer.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/amnykon/SParserCalc&quot;&gt;SParserCalc&lt;/a&gt; is a command line calculator that uses SParser and is designed to be an example of how to  use SParser.&lt;/p&gt;
 
-&lt;p&gt;A .sparser file describes the format of the file to create a parser for by using rules. A rule describes a component in the file that can be read. In the &lt;a href=&quot;https://github.com/amnykon/SParserCalc/blob/master/Source/SParserCalc/SParserCalc.sparser&quot;&gt;SPrcerCalc.sparcer&lt;/a&gt;, the some of the rules are: exp, term, factor, and number.&lt;/p&gt;
+&lt;p&gt;Rules are used to describe the format of a .sparser file. A rule describes a component in the file that can be read. In &lt;a href=&quot;https://github.com/amnykon/SParserCalc/blob/master/Source/SParserCalc/SParserCalc.sparser&quot;&gt;SParserCalc.sparser&lt;/a&gt;, some of the rules are: expression, term, factor, and number.&lt;/p&gt;
 
-&lt;p&gt;Each rule has a type and atleast one pattern. Using the exp rule from SParcerCalc:&lt;/p&gt;
+&lt;p&gt;Each rule has a type and at least one pattern. Using the expression rule from SParserCalc:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;exp
+&lt;pre&gt;&lt;code&gt;expression
   type
     Double
   ::= term
     return term
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;The type is the Swift data type that is returned when the rule is read. In is case, the return type is double.&lt;/p&gt;
+&lt;p&gt;The type is the Swift data type that is returned when the rule is read. In this case, the return type is Double.&lt;/p&gt;
 
-&lt;p&gt;The pattern is a block that starts with “::=”. After the “::=” is a list of other rules to read for this rule. In this case it just reads the a term. The next line is the Swift code for the function that takes all of the rules read to match the pattern and returns the type of the rule.&lt;/p&gt;
+&lt;p&gt;The pattern is a block that starts with “::=”. After the “::=” is a list of other rules to read for this rule. In this case it just reads the term rule. The following line is Swift code that converts the data matched in the pattern to the type of the rule. The expression rule returns the term without modifing it.&lt;/p&gt;
 
-&lt;p&gt;There can be multiple patterns in a rule. SParcerCalc’s term has 3 patterns.&lt;/p&gt;
+&lt;p&gt;There can be multiple patterns in a rule. SParserCalc’s term has 3 patterns.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;term
   type
     Double
@@ -41,16 +41,16 @@
   ::= factor
     return factor
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Pattern 1 describes a term with a “+” and adds the components together. This pattern is recurseive as it’s first component reads it’s self.
-Pattern 2 describes a term with a “-“ and subtracts the compentents together.
+&lt;p&gt;Pattern 1 matches a term rule, a “+” string, followed by a factor rule and returns their sum. This pattern is recursive as the first rule in the pattern is itself.
+Pattern 2 is the same as pattern 1, except that it subtracts the factor from the term.
 Pattern 3 simply returns the factor.&lt;/p&gt;
 
 &lt;p&gt;Once these rules are created, SParser can convert these .sparser files to .swift files. Each rule is turned into a function that will read the contents of the file.&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 04 Oct 2017 07:32:24 -0500</pubDate>
-        <link>http://www.delightfuldev.com/SParcer</link>
-        <guid isPermaLink="true">http://www.delightfuldev.com/SParcer</guid>
+        <link>http://www.delightfuldev.com/SParser</link>
+        <guid isPermaLink="true">http://www.delightfuldev.com/SParser</guid>
         
         
         <category>iphone</category>
@@ -64,7 +64,7 @@ Don’t waste your time sitting and scrolling through social media photos on you
 You can now get outside and hunt for amazing images hidden around town, or drop your own epic photo for someone to find. The more photos you drop, find, and like, the more points you earn!&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/PhotoDrop/PhotoDropWayOverWander.png&quot; height=&quot;552px&quot; width=&quot;311px&quot; class=&quot;content__item-img-center animated zoomIn&quot; /&gt;
-Take pictures and drop them at the gheographical location they where taken.&lt;/p&gt;
+Take pictures and drop them at the geographical location where they were taken.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/PhotoDrop/PhotoDropRouteToDabird.png&quot; height=&quot;552px&quot; width=&quot;311px&quot; class=&quot;content__item-img-center animated zoomIn&quot; /&gt;
 Tap on a gem to reveal it’s title and the fastest route to navigate there.&lt;/p&gt;
@@ -89,9 +89,9 @@ Earn points by liking a photo and dropping your own photo for others to like.&lt
     
       <item>
         <title>Project Flow</title>
-        <description>&lt;p&gt;Project Flow allows a large project to be broken up into tasks. These tasks can be further broken into smaller tasks. This can continue until the tasks are easily achievable.
+        <description>&lt;p&gt;Project Flow allows a large project to be broken up into tasks. These tasks can be broken down further into smaller tasks. This can continue until the tasks are easily achievable.
 Projects can be shared with others to allow the project to be completed as a group.
-Utilized CloudKit to store project and task information and to coordinate efforts projects with others.&lt;/p&gt;
+Utilized CloudKit to store project and task information and to coordinate efforts with others.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/ProjectFlow/ProjectFlowMVP7+.png&quot; height=&quot;552px&quot; width=&quot;311px&quot; class=&quot;content__item-img-center animated zoomIn&quot; /&gt;
 Split a large project into tasks. Split those tasks to even smaller tasks.&lt;/p&gt;
